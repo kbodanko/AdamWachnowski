@@ -1,0 +1,25 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bg.png);
+}
+.description{
+    color: rgb(255, 247, 247);
+    font-family: 'DAMAGEPLAN PERSONAL USE', sans-serif;
+}
+.big_para{
+    font-size: 12rem;
+    margin: 0;
+}
+.avatar img{
+    width: 60vw;
+}
