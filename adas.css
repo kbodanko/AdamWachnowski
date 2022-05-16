@@ -114,6 +114,15 @@ body{
     .background{
         padding: 1rem;
     }
+    .social_icons{
+        margin: 0;
+    }
+    .wrapper{
+        justify-content: start;
+    }
+    .avatar img{
+        margin: 2rem 0;
+    }
     .description_small_para, .description_big_para{
         font-size: 3.5rem;
     }
