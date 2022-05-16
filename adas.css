@@ -9,15 +9,21 @@ body{
 footer{
     display: flex;
     justify-content: end;
-    margin-top: -1.5rem;
+    /* margin-top: -1.5rem; */
+    position:absolute;
+    bottom: 0;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
 .background{
+    background-image: url(img/bg.png);
+    min-height: 100vh;
+}
+.content_wrapper{
     display: flex;
     flex-direction: column;
-    min-height: 99vh;
     padding: 0 3rem 0 3rem;
-    background-image: url(img/bg.png);
+
 }
 .wrapper{
     display: flex;
@@ -65,7 +71,7 @@ footer{
     margin: 0 .5rem 0 0;
 }
 @media (max-width: 1300px){
-    .background{
+    .content_wrapper{
         padding: 0 1rem 0 1rem;
     }
     .social_icons{
@@ -93,7 +99,7 @@ footer{
     }
 }
 @media (max-width: 800px){
-    .background{
+    .content_wrapper{
         padding: 0 2rem 0 2rem;
     }
     .social_icons{
@@ -119,7 +125,7 @@ footer{
     }
 }
 @media (max-width: 500px){
-    .background{
+    .content_wrapper{
         padding: 1rem 1rem 0 1rem;
     }
     .social_icons{
