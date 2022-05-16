@@ -15,6 +15,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 85vh;
 }
 .social_icons{
     display: flex;
@@ -53,4 +54,67 @@ body{
 }
 .avatar img{
     width: 60vw;
+}
+
+@media (max-width: 1300px){
+    .background{
+        padding: 0 1rem;
+    }
+    .social_icons{
+        margin-left:2.5rem;
+    }
+    .description_big_para{
+        font-size: 7rem;
+    }
+}
+@media (max-width: 1100px){
+    .social_icons{
+        margin-left: 3rem;
+    }
+    .social_icons_img{
+        height: 1.2rem;
+    }
+    .avatar img{
+        width: 55vw;
+    }
+    .description_big_para{
+        font-size: 5rem;
+    }
+    .description_small_para{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 800px){
+    .background{
+        padding: 0 2rem;
+    }
+    .social_icons{
+        margin-left: 0;
+    }
+    .wrapper{
+        flex-direction: column-reverse;
+        width: 90vw;
+    }
+    .description_para_wrapper{
+        display: flex;
+    }
+    .description_small_para{
+        margin: 0;
+        margin-left: .5rem;
+        font-size: 5rem;
+    }
+    .description_content{
+        width: 100%;
+    }
+    .avatar img{
+        width: 80vw;
+    }
+}
+@media (max-width: 500px){
+    .background{
+        padding: 1rem;
+    }
+    .description_small_para, .description_big_para{
+        font-size: 3.5rem;
+    }
 }
