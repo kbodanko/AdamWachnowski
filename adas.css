@@ -2,13 +2,21 @@
 body{
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
-
+footer{
+    display: flex;
+    justify-content: end;
+    margin-top: -1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 .background{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    padding: 0 3rem;
+    min-height: 99vh;
+    padding: 0 3rem 0 3rem;
     background-image: url(img/bg.png);
 }
 .wrapper{
@@ -31,8 +39,6 @@ body{
 }
 .email{
     margin: 0;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     visibility: hidden;
 }
@@ -45,7 +51,7 @@ body{
     margin: 0;
 }
 .description_small_para{
-    font-size: 2rem;
+    font-size: 4rem;
     margin: .5rem 0;
 }
 .description_content{
@@ -55,10 +61,12 @@ body{
 .avatar img{
     width: 60vw;
 }
-
+.sign{
+    margin: 0 .5rem 0 0;
+}
 @media (max-width: 1300px){
     .background{
-        padding: 0 1rem;
+        padding: 0 1rem 0 1rem;
     }
     .social_icons{
         margin-left:2.5rem;
@@ -86,7 +94,7 @@ body{
 }
 @media (max-width: 800px){
     .background{
-        padding: 0 2rem;
+        padding: 0 2rem 0 2rem;
     }
     .social_icons{
         margin-left: 0;
@@ -112,10 +120,14 @@ body{
 }
 @media (max-width: 500px){
     .background{
-        padding: 1rem;
+        padding: 1rem 1rem 0 1rem;
     }
     .social_icons{
         margin: 0;
+    }
+    .social_icons_img{
+        height: 1rem;
+        margin-right: 1rem;
     }
     .wrapper{
         justify-content: start;
