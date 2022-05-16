@@ -21,24 +21,27 @@ footer{
     background-color: rgba(14, 6, 6, 0.6);
 }
 .background{
+    position: relative;
     background-image: url(img/bg.png);
     min-height: 100vh;
 }
 .content_wrapper{
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     padding: 0 3rem 0 3rem;
 
 }
 .wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 85vh;
+    min-height: 70vh;
+    /* height: 85vh; */
 }
 .social_icons{
     display: flex;
-    margin: 1.5rem 0 0  1.5rem;
+    padding: 1.5rem 3rem;
 }
 .social_icons_img{
     height: 1.5rem;
@@ -76,21 +79,19 @@ footer{
     margin: 0 .5rem .2rem 0;
     font-size: .8rem;
 }
+
 @media (max-width: 1300px){
     .content_wrapper{
-        padding: 0 1rem 0 1rem;
+        padding: 0 2rem;
     }
     .social_icons{
-        margin-left:2rem;
+        padding-left: 2rem;
     }
     .description_big_para{
         font-size: 7rem;
     }
 }
 @media (max-width: 1100px){
-    .social_icons{
-        margin-left: 2.5rem;
-    }
     .social_icons_img{
         height: 1.2rem;
     }
@@ -109,21 +110,19 @@ footer{
     }
 }
 @media (max-width: 800px){
-    .content_wrapper{
-        padding: 0 2rem 0 2rem;
-    }
-    .social_icons{
-        margin-left: 0;
-    }
     .email{
         font-size: .8rem;
     }
     .wrapper{
         flex-direction: column-reverse;
-        width: 90vw;
+        /* width: 90vw; */
+    }
+    .content_wrapper{
+        padding: 0 2rem 0 2rem;
     }
     .description_para_wrapper{
         display: flex;
+        margin: 1.5rem 0;
     }
     .description_small_para{
         margin: 0;
@@ -138,12 +137,6 @@ footer{
     }
 }
 @media (max-width: 500px){
-    .content_wrapper{
-        padding: 1rem 1rem 0 1rem;
-    }
-    .social_icons{
-        margin: 0;
-    }
     .social_icons_img{
         height: 1rem;
         margin-right: 1rem;
@@ -151,13 +144,18 @@ footer{
     .email{
         font-size: .7rem;
     }
-    .wrapper{
-        justify-content: start;
-    }
-    .avatar img{
-        margin: 2rem 0;
-    }
     .description_small_para, .description_big_para{
         font-size: 3.5rem;
+    }
+}
+@media (max-height: 900px){
+}
+@media (max-height: 400px){
+    .background, .content_wrapper{
+        min-height: 200vh;
+        /* align-items: flex-start; */
+    }
+    .avatar{
+        margin-top: 7rem;
     }
 }
