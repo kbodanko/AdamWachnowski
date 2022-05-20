@@ -1,7 +1,7 @@
 # AdamWachnowski
 ## live: https://kbodanko.github.io/AdamWachnowski/
 
-![page screen](https://github.com/kbodanko/AdamWachnowski/blob/main/image%203.png)
+![page screen](https://github.com/kbodanko/AdamWachnowski/blob/main/adamMockup.png)
 
 **The heart of the project:**
 Graphics
